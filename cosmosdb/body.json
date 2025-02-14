@@ -1,0 +1,18 @@
+{
+    "Id": "6a8f1ad5-568c-466f-ab1d-4fca387e6d08",
+    "RoleName": "TopAdminDude",
+    "Type": "CustomRole",
+    "AssignableScopes": ["/"],
+    "Permissions": [{
+      "DataActions": [
+        "Microsoft.DocumentDB/databaseAccounts/readMetadata",
+        "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers/items/read",
+        "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers/items/create",
+        "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers/items/delete",
+        "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers/executeQuery",
+        "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers/readChangeFeed",
+        "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/write",
+        "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers/write"
+      ]
+    }]
+  }
