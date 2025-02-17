@@ -74,7 +74,11 @@ az cosmosdb sql role definition create --account-name trainingdb99 --resource-gr
 
 3. Add a user to the new role:
 ```
-az cosmosdb sql role assignment create --resource-group training --account-name trainingdb99   --principal-id d4c6ad66-ad36-45c6-87bf-943d48ee7be1 --role-definition-name "TopAdminDude" --scope "/"
+az cosmosdb sql role assignment create --resource-group training
+                                       --account-name trainingdb99
+                                       --principal-id 38bea182-37d6-492d-81a7-ca28ad28d6e1
+                                       --role-definition-name "TopAdminDude"
+                                       --scope "/"
 ```
 Instead of using `--role-definition-name` it is possible to also use `--role-definition-id`. The data plane resource path at which this Role Assignment is being granted is defined by `--scope`.
 
@@ -111,7 +115,11 @@ az cosmosdb sql role assignment list --account-name trainingdb99 --resource-grou
 
 Remove an assignment
 ```
-az cosmosdb sql role assignment delete --account-name trainingdb99 --resource-group training  --role-assignment-id 2cb065b9-38f8-4dcb-8aa1-fb6710b6dc2f --no-wait --yes
+az cosmosdb sql role assignment delete --account-name trainingdb99
+                                       --resource-group training
+                                       --role-assignment-id 2cb065b9-38f8-4dcb-8aa1-fb6710b6dc2f
+                                       --no-wait
+                                       --yes
 ```
 
 Remove a custom role
