@@ -15,7 +15,11 @@ However users/identities cannot be added to the "data plane" via the portal as t
 
 To add a user to a role:
 ```
-az cosmosdb sql role assignment create --account-name trainingdb99 --resource-group training --scope "/" --principal-id 38bea182-37d6-492d-81a7-ca28ad28d6e1 --role-definition-name "Cosmos DB Built-in Data Contributor"
+az cosmosdb sql role assignment create --account-name trainingdb99
+                                       --resource-group training
+                                       --scope "/"
+                                       --principal-id 38bea182-37d6-492d-81a7-ca28ad28d6e1
+                                       --role-definition-name "Cosmos DB Built-in Data Contributor"
 ```
 
 List all existing sql cosmodb role defintions:
