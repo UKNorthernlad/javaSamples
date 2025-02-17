@@ -32,8 +32,10 @@ az cosmosdb sql role definition list --account-name trainingdb99 --resource-grou
 Neither of the built-in roles have the rights to create databases or containers or add items so if you need this you will need to add a custom role, assign it to the database and assign users to the role.
 
 This has the same DataActions permissions (aka rights) as "Cosmos DB Built-in Data Contributor" PLUS
-      - Microsoft.DocumentDB/databaseAccounts/sqlDatabases/write
-      - Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers/write
+
+- Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers/items/create
+- Microsoft.DocumentDB/databaseAccounts/sqlDatabases/write
+- Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers/write
 
 > Taken from https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/security/how-to-grant-data-plane-role-based-access?tabs=custom-definition
 
