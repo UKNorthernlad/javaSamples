@@ -66,9 +66,11 @@ This has the same DataActions permissions (aka rights) as "Cosmos DB Built-in Da
 
 2. Create the role.
 
-# The @ sign will read-in the contents of the body.json file automatically when using PowerShell
+The @ sign will read-in the contents of the body.json file automatically when using PowerShell
 
+```
 az cosmosdb sql role definition create --account-name trainingdb99 --resource-group training --body "@body.json"
+```
 
 3. Add a user to the new role:
 ```
