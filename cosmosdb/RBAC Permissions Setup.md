@@ -13,7 +13,7 @@ There are 2 out of the box roles on a CosmosDB users can be added to.
 
 However users/identities cannot be added to the "data plane" via the portal as this only supports adding users for the "control plane". You must instead add users from the command line.
 
-To add a user to a role:
+To add a user to a role using their GUID principal ID:
 ```
 az cosmosdb sql role assignment create --account-name trainingdb99
                                        --resource-group training
