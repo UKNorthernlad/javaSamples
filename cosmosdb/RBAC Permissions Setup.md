@@ -44,7 +44,7 @@ This has the same DataActions permissions (aka rights) as "Cosmos DB Built-in Da
 
 ```json
 {
-  "Id": "6a8f1ad5-568c-466f-ab1d-4fca387e6d08",
+  "Id": "<insert-new-guid-here>",
   "RoleName": "TopAdminDude",
   "Type": "CustomRole",
   "AssignableScopes": ["/"],
