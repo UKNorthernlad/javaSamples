@@ -6,7 +6,7 @@
 
 To access data in CosmosDB using RBAC means having to add the user or service principal to a specific role.
 
-There are 2 out of the box roles on a CosmosDB users can be added it.
+There are 2 out of the box roles on a CosmosDB users can be added to.
 
 * Cosmos DB Built-in Data Contributor
 * Cosmos DB Built-in Data Reader
